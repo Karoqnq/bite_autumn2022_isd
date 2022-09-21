@@ -1,0 +1,29 @@
+<html><head>
+	<meta charset="UTF-8">
+	<title>Body Mass Index (BMI)</title>
+	<script src="06.05BodyMassIndex.js"></script> 
+</head>
+<body>
+	<h3>Body Mass Index (BMI)</h3>
+
+	<form data-dashlane-rid="235716858f14e485" data-form-type="">
+		<p>
+			<label>Weight: </label> <input type="text" name="weight" id="weight" size="3" data-dashlane-rid="70b0bc66ec41c4c2" data-form-type=""> kg
+		</p>
+		<p>
+			<label>Height: </label> <input type="text" name="height" id="height" size="3" data-dashlane-rid="1f1471d5b3902214" data-form-type=""> cm &nbsp;&nbsp;&nbsp;
+		</p>
+		<p>
+			<input type="button" id="submit" value="Calculate BMI" onclick="calculateBMI()" data-dashlane-rid="91cf425da30b9b26" data-form-type="">
+		</p>
+	</form>
+
+	<div id="answer"></div>
+
+
+
+<!-- test example:
+weight = 80, height = 180 -> BMI 24.69 (Normal weight)
+weight = 60, height = 183 -> BMI 17.92 (Weight less than normal weight)
+weight = 90, height = 180 -> BMI 27.78 (Overweight)
+--></body></html>

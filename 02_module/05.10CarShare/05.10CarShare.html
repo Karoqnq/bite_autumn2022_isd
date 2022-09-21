@@ -1,0 +1,43 @@
+<html><head>
+    <meta charset="UTF-8">
+    <title>Car Share</title>
+    <style type="text/css">
+    label {
+        display: block;
+        width: 6em;
+        float: left;
+    }
+    </style>
+    
+    <script src="05.10CarShareEx.js">
+    </script>
+    </head>
+    <body>
+        <h3>Car Share</h3>
+        <form data-dashlane-rid="f01492970896824c" data-form-type="">
+            <p>
+                <label>Kilometers: </label> 
+                <input type="text" name="kilometers" id="kilometers" size="6" data-dashlane-rid="63ca857d4fd397b4" data-form-type="">
+            </p>
+            <p>
+                <label>Consump.l/100 km: </label>
+                 <input type="text" name="consumption" id="consumption" size="6" data-dashlane-rid="16b19fcbfd862f87" data-form-type="">
+            </p>
+            <p>
+                <label>Price e/l: </label> 
+                 <input type="text" name="price" id="price" size="6" data-dashlane-rid="80a96e88522b810d" data-form-type="">
+            </p>
+            <p>
+                <label>Participants: </label> 
+                <input type="text" name="participants" id="participants" size="6" data-dashlane-rid="d589da2b4624ee28" data-form-type="">
+            </p>
+            <p>
+                <input type="button" id="submit" value="Calculate costs" onclick="calculateCosts()" data-dashlane-rid="ac60ff8c25c8c1b2" data-form-type="">
+            </p>
+        </form>
+    
+            <!-- This is the target where the JavaScript will write the answer -->
+        <div id="answerId"></div>
+    
+    </body>
+    </html>
