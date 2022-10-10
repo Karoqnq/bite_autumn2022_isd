@@ -1,0 +1,65 @@
+
+
+body {
+    background-color: rgb(203, 178, 160);;
+}
+header {
+    grid-area: h;
+    height: 25vh;
+    width: 20vw;
+    justify-self:center;
+    text-align: center;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.pfp {
+    
+    height: 15vh;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+main {
+    grid-area: m;
+    height: 65vh;
+    border-right: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+
+}
+
+aside {
+    grid-area: a;
+    height: 65vh;
+
+}
+
+footer {
+    grid-area: f;
+   
+    display: flex;
+    justify-content:space-between ;
+}
+
+a {
+    color:black;
+}
+a:hover {
+    color: darkred;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+.grid-container {
+    display:grid;
+    grid-template-areas: 
+    "h h h h"
+    "m m m a"
+    "m m m a"
+    "f f f f";
+}
+
+.sidePic {
+    height: 65vh;
+}

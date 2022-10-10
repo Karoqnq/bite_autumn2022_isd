@@ -1,0 +1,44 @@
+<html><head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+    label {
+        display: block;
+        width: 13em;
+        float: left;
+    }
+    </style>
+    <title>Votes of Party</title>
+    
+    <script src="08.06VotesofPartyEx.js">
+    </script>
+    </head>
+    <body>
+        <h3>Votes of Party</h3>
+    
+        <form data-dashlane-rid="671237e3be805f29" data-form-type="other">
+            <p>
+                <label>Total votes by the whole party: </label> <input type="text" name="votes" id="votes" size="5" data-dashlane-rid="5db665be4c15a2c2" data-form-type="other">
+            </p>
+            <p>
+                <label>Number of candidates in the party: </label> <input type="text" name="candidates" id="candidates" size="3" data-dashlane-rid="ed84c0e2ee7bca0e" data-form-type="date">
+            </p>
+            <p>
+                <input type="button" value="Show the comparison scores" id="submit" onclick="showComparisonScores()" data-dashlane-rid="42eca1f488ce38b0" data-form-type="other">
+            </p>
+        </form>
+    
+            <!-- This is the target where the JavaScript will write the answer -->
+        <div id="answer"></div>
+    
+    
+    
+    <!-- test example:
+    votes = 10000, candidates = 5 -> 1. candidate: 10000
+        2. candidate: 5000
+        3. candidate: 3333
+        4. candidate: 2500
+        5. candidate: 2000
+                            
+    -->
+    
+    </body></html>
