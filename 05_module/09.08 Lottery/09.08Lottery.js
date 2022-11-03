@@ -2,29 +2,29 @@
 	// Then they will be global and thus available for all functions to read from or write to.
 	var names = [];
 	var index = 0;
-    var namesText = ""
 	function addName() {
+		var namesText = ""
 		// Assign name from the input field to the array
 
-        names.push(document.getElementById("txtName").value);
+        names.push(document.getElementById("name").value);
 
 		// Increase the index by one
-
+		index = index + 1
 
 		// Go through the array in a for loop adding each name at the end of the namesText
 		
-        for (var index = 0; index < names.length; index++){
-            namesText += names[index];
+        for (var i = 0; i < names.length; i++){
+            namesText += names[i] + " ";
         }
 
 		// Write the names on the page, to the names div, as content of the div
 
-        document.getElementById("nameList").innerHTML = "Inserted names: " + names;
+        document.getElementById("nameList").innerHTML = "Inserted names: " + namesText;
 
     
 		// Empty the input field of name as that name was just put in the array
 
-        document.getElementById("txtName").value = "";
+        document.getElementById("name").value = "";
        
 		// Empty the answer text
 	}
@@ -37,7 +37,7 @@
 
 		// Write the answer on the page, to the answer div, as content of the div
 		
-        document.getElementById("answer").innerHTML = "Winner is " + names[index];
+        document.getElementById("answer").innerHTML = "<br> Winner is " + names[winningIndex];
 
 
 	}

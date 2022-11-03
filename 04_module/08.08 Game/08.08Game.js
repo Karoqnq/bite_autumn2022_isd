@@ -2,29 +2,29 @@
  function calculateProfit() {
 
         var rounds = Number(document.getElementById("rounds").value);
-        result=""
+        var earnings = 0;
         
         for (var i = 1; i <= rounds; i++){
 
-         var pips = Math.round( (Math.random( ) * 5) + 1 );
+            var pips = Math.round( (Math.random( ) * 5) + 1 );
 
-        if (pips === 1 || pips === 3 || pips === 5 ) {
-            result += pips;
-        }
+            if (pips === 1 || pips === 3 || pips === 5 ) {
+
+             }
     
-        else if (pips === 4 || pips === 2) {
-            result += pips * 1.25;
-        }
+             else if (pips === 4 || pips === 2) {
+             earnings += 1 * 1.25;
+             }
     
-        else {
-            result +=  pips * 1.5; 
+             else if (pips == 6) {
+             earnings += 1 * 1.5; 
 
+             }
         }
-        }
 
-        var profit = rounds - result;
+        var profit = rounds - earnings;
 
-        document.getElementById("answer").innerHTML ="Bets were altogether " + rounds.toFixed(2) + " euros " + "<br/>" + "Wins were " + result.toFixed(2) + " euros" + "<br/>" + "Profit was " + profit.toFixed(2) + " euros";
+        document.getElementById("answer").innerHTML ="Bets were altogether " + rounds.toFixed(2) + " euros " + "<br/>" + "Wins were " + earnings.toFixed(2) + " euros" + "<br/>" + "Profit was " + profit.toFixed(2) + " euros";
      }
     
     

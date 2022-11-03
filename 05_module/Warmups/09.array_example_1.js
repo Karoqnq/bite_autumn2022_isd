@@ -16,7 +16,7 @@ attendees[1] = "Alice";	        // Changes the value of the array element
 
 
 for (var i = 0; i < attendees.length; i++) {
-    console.log (attendees[i]); 	
+    console.log(attendees[i]); 	
 }
 
 console.log("=== Attendees in alphabetical order ===");
@@ -24,7 +24,7 @@ console.log("=== Attendees in alphabetical order ===");
 attendees.sort();
 
 for (var i = 0; i < attendees.length; i++) {
-    console.log (attendees[i]); 	
+    console.log(attendees[i]); 	
 }
 
 // End

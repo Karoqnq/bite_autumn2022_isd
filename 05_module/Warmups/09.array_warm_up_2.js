@@ -22,7 +22,7 @@ function translateToFinnish() {
 }
 
 // These arrays are created when the HTML page is loaded
-var englishWords = ["cat", "dog", "bird"];
-var finnishWords = ["kissa", "koira", "lintu"];
+var englishWords = ["cat", "dog", "bird", "cow", "pig"];
+var finnishWords = ["kissa", "koira", "lintu", "lehmä", "sika"];
 
 // End

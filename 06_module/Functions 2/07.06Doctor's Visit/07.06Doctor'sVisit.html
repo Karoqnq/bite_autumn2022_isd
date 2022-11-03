@@ -1,0 +1,41 @@
+<html><head>
+    <meta charset="UTF-8">
+    <title>Kela reimbursement</title>
+    <style type="text/css">
+    label {
+        display: block;
+        width: 10em;
+        float: left;
+    }
+    </style>
+    
+    <script src="07.06Doctor'sVisit.js">
+    </script>
+    </head>
+    <body>
+        <h3>Kela reimbursement</h3>
+    
+        <form data-dashlane-rid="de2f2b839ec5df9a" data-form-type="other">
+            <p>
+                <label>Length of the visit: </label> <input type="text" name="length" id="length" size="3" data-dashlane-rid="1b99e5804a29ba93" data-form-type="other"> min
+            </p>
+            <p>
+                <label>Doctor’s Fee </label> <input type="text" name="doctorsFee" id="doctorsFee" size="8" data-dashlane-rid="dce39004990c6173" data-form-type="other"> euros
+            </p>
+            <p>
+                <input type="button" id="submit" value="Calculate" onclick="calculate()" data-dashlane-rid="783c024ecdee323d" data-form-type="action">
+            </p>
+        </form>
+    
+        <!-- This is the target where the JavaScript will write the answer -->
+        <div id="answer"></div>
+    
+    
+    
+    <!-- test example:
+    length = 21, doctorsFee = 69 -> Doctor’s Fee 69.00 euros 
+                            Kela reimbursement 13.50 euros
+                            Office Fee 15.90 euros
+                            Customer needs to pay 71.40 euros
+    -->
+    </body></html>

@@ -10,10 +10,12 @@ function showFinnishWord() {
     var digitText = document.getElementById("txtDigit").value;
     var digit = Number(digitText);
     
-    if (digit >= 0 && digit <= 12) {
-        outputText = wordArray[digit];
-    } else {
-        outputText = "Please enter a valid digit (0-12)!"
+    if (digit >= 1 && digit <= 12) {
+        outputText = wordArray[digit - 1];
+    } 
+    
+    else {
+        outputText = "Please enter a valid digit (1-12)!";
     }
         
     document.getElementById("pOutput").innerHTML = outputText;
